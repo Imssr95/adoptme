@@ -1,0 +1,214 @@
+<!DOCTYPE html>
+<html>
+<head>
+   <title>Adopt Application</title>
+   <link rel="stylesheet" type="text/css" href="css/application.css">
+   <link href="https://fonts.googleapis.com/css?family=Flamenco" rel="stylesheet">
+   <script src="https://code.jquery.com/jquery-3.3.1.js"></script>
+    <script type="text/javascript">
+       $(window).on('scroll',function(){
+           if($(window).scrollTop()){
+               $('nav').addClass('black');
+           }
+           else
+               {
+                   $('nav'.removeClass('black'));
+               }
+       })
+    </script>
+</head>
+<body>
+    <header>
+    <nav>
+      <div class="row clearfix">
+        <img src="Images/UN_logo.png" class="logo">
+          <div class="main-nav">
+        <ul>
+            <li><a href="application.html">Adopt</a></li>
+            <li><a href="#">Donate</a></li>
+            <li><a href="#">Contact</a></li>
+            <li><a href="registration.html">My Acount</a></li>
+          
+        </ul>
+        </div>
+      </div>
+     </nav>
+     <div class="main-content-header">
+      <h6>“Every child <span class="colorchange">deserves</span><br>
+                a home and love.”</h6>
+      
+     </div>
+     
+    
+  </header> 
+    
+    <div class="frm">
+     <h1>Indian Adoption's Application Form</h1>
+     <p><h2>How do we join Indian Adoptions to begin the process of adopting?</h2></p>
+     <p>The first step in joining Indian Adoptions is to call and speak with an Adoptive Family Coordinator about our agency and your adoption needs/wants. Our application process is designed to ensure that you feel ready to develop a partnership with us, while also allowing us the opportunity to ensure that your expectation align with ours and that both parties will be a good fit for one another. We believe this mutual assessment process is a key element in building a partnership with our adoptive families. If you have not yet spoken with one of our Adoptive Family Coordinators, please do so before completing the below application.</p>
+     <h3>Parent Eligibility -</h3>
+     <div class="elig">
+     <p>- Legally married<br>
+        - Married at least 2 years<br>
+        - Between 25 and 50 years of age<br>
+        - no more than two children</p>
+        </div>
+     </div>
+     <div class="register">
+     	<form method="post" id="register" action"">
+     		<h2>Contact information</h2>
+     		<input type="text" name="fname" id="name" placeholder="First name"><br><br>
+     		
+     		<input type="text" name="fname" id="name" placeholder="Last name"><br><br>
+            <input type="text" name="fname" id="name" placeholder="Address Line 1"><br><br>
+            <input type="text" name="fname" id="name" placeholder="Address Line 2"><br><br>
+     		<label>City:</label><br>
+            <select id="City">
+                <option>Phagwara</option>
+                <option>Jehanabad</option>
+                <option>Jalandhar</option>
+                <option>Delhi</option>
+            </select><br><br>
+            <input type="text" name="fname" id="name" placeholder="Zip"><br><br>
+            <input type="text" name="fname" id="name" placeholder="State"><br><br>
+            <select id="ph">
+                <option>+91</option>
+                <option>+01</option>
+                <option>+07</option>
+                <option>+75</option>
+            </select>
+             <input type="number" name="mnum" id="num" placeholder="Mobile Number"><br><br>
+             <input type="email" name="fname" id="email" placeholder="Email"><br><br>
+            
+             <h3>Parent 1 Informstion</h3><br>
+             <input type="text" name="fname" id="name" placeholder="First name"><br><br>
+            
+            <input type="text" name="fname" id="name" placeholder="Last name"><br><br>
+            <input type="text" name="fname" id="name" placeholder="Citizenship"><br><br>
+             <input type="radio" name="male" id="male"><span id="male">&nbsp; Male</span>&nbsp;&nbsp;
+             <input type="radio" name="male" id="male"><span id="male">&nbsp; Female</span>&nbsp;&nbsp;
+             <input type="radio" name="male" id="male"><span id="male">&nbsp; Other</span>&nbsp;&nbsp;<br><br>
+             <label>Date Of Birth:</label><br>
+                  <div ng-app>
+                <p>
+                 <label>Date Of Birth:</label>
+                 <input type="date" id="date" ng-model="datevalue" />
+                </p>
+            </div><br><br>
+                
+
+            <input type="text" name="fname" id="name" placeholder="Employment"><br><br>
+            <input type="text" name="fname" id="name" placeholder="Position"><br><br>
+          <input type="text" name="fname" id="name" placeholder="Work Phone"><br><br>
+            <input type="text" name="fname" id="name" placeholder="Cell Phone"><br><br>
+            <input type="text" name="fname" id="name" placeholder="Work E-mail"><br><br>
+            <label>Religion</label>
+            <select id="Religion">
+                <option>Hindu</option>
+                <option>Sikh</option>
+                <option>Christan</option>
+                <option>Muslim</option>
+            </select><br><br>
+             <input type="number" name="mnum" id="num" placeholder="Education"><br><br>
+             <input type="email" name="fname" id="email" placeholder="Annual Salary"><br><br>
+
+
+
+
+
+
+
+             <h3>Parent 2 Informstion</h3>
+             <input type="text" name="fname" id="name" placeholder="First name"><br><br>
+            
+            <input type="text" name="fname" id="name" placeholder="Last name"><br><br>
+            <input type="text" name="fname" id="name" placeholder="Citizenship"><br><br>
+             <input type="radio" name="male" id="male"><span id="male">&nbsp; Male</span>&nbsp;&nbsp;
+             <input type="radio" name="male" id="male"><span id="male">&nbsp; Female</span>&nbsp;&nbsp;
+             <input type="radio" name="male" id="male"><span id="male">&nbsp; Other</span>&nbsp;&nbsp;<br><br>
+            
+                
+                
+             <div ng-app>
+                <p>
+                 <label>Date Of Birth:</label>
+                 <input type="date" id="date" ng-model="datevalue" />
+                </p>
+            </div><br><br>
+            <input type="text" name="fname" id="name" placeholder="Employment"><br><br>
+            <input type="text" name="fname" id="name" placeholder="Position"><br><br>
+          <input type="text" name="fname" id="name" placeholder="Work Phone"><br><br>
+            <input type="text" name="fname" id="name" placeholder="Cell Phone"><br><br>
+            <input type="text" name="fname" id="name" placeholder="Work E-mail"><br><br>
+            <label>Religion</label>
+            <select id="Religion">
+                <option>Hindu</option>
+                <option>Sikh</option>
+                <option>Christan</option>
+                <option>Muslim</option>
+            </select><br><br>
+             <input type="number" name="mnum" id="num" placeholder="Education"><br><br>
+             <input type="email" name="fname" id="email" placeholder="Annual Salary"><br><br>
+             <a href="#" class="btn btn-second">Submit The Forms</a>
+     
+        </form>
+    </div>
+   
+        <div id="footer">
+        <div class="container">
+             <div class="footer_sub">
+                
+              <center>
+                   <h2>Indian Adoption</h2>
+                   <ul>
+                     <li><a href="#">Contact Indian Adoption</a></li>
+                     <li><a href="#">Legal Disclaimer</a></li>
+                     <li><a href="#">Privacy Policy</a></li>
+                     <li><a href="#">Areas Served</a></li>
+
+                   </ul>
+              </center>
+             </div>
+             <div class="footer_sub_2">
+              <center>
+                   <h2>Adopt</h2>
+                   <ul>
+                     <li><a href="#">Adoptive</a></li>
+                     <li><a href="#">Family Home</a></li>
+                     <li><a href="#">Adoption Cost</a></li>
+                     <li><a href="#">Infertility to Adopyion</a></li>
+                     <li><a href="#">Get Free InFo</a></li>
+                   </ul>
+              </center>
+             </div>
+             <div class="footer_sub_2">
+
+              <center>
+                   <h2>Social links</h2>
+                   <ul>
+                     <li><a href="https://www.facebook.com/">Facebook</a></li>
+                     <li><a href="#">Google+</a></li>
+                     <li><a href="https://twitter.com/">Twitter</a></li>
+                     <li><a href="https://www.youtube.com/">Youtube</a></li>
+                     <li><a href="https://www.instagram.com/accounts/login/?hl=en">Instagram</a></li>
+                   </ul>
+              </center>
+             </div>
+             <div class="footer_sub_3">
+                <center>
+                    <h2>Explore</h2>
+                   <ul>
+                     <li><a href="#">Adoption information and Resources</a></li>
+                     <li><a href="#">Adopted Child</a></li>
+                     <li><a href="#">Adoption By State</a></li>
+                     <li><a href="#">About Indian Adoption</a></li>
+                     <li><a href="#">Our Blog</a></li>
+                   </ul>
+                </center>
+             </div>
+
+        </div>
+        </div>
+</body>
+
+</html>
